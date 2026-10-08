@@ -345,12 +345,6 @@ async def shutdown_event():
         except asyncio.CancelledError:
             pass
 
-    if APP_ENV == "production":
-        try:
-            await bot.delete_webhook()
-        except Exception:
-            pass
-
     await bot.session.close()
 
 
