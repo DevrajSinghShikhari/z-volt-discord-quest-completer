@@ -1,0 +1,8 @@
+aiogram
+fastapi
+uvicorn[standard]
+sqlalchemy
+asyncpg
+python-dotenv
+cryptography
+httpx
